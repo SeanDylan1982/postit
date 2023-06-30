@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter, Roboto } from 'next/font/google'
-import Nav from '../Components/Auth/Nav'
+import Nav from '../api/auth/Nav'
 
 const inter = Inter({ subsets: ['latin'], weight: ["400", "700"], variable: "--font-inter" })
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"], variable: "--font-roboto" })
