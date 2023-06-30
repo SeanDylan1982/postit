@@ -17,11 +17,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+}
+
+Nav {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 50px;
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+  box-shadow: 0 0 15px #1a1a1a;
+  margin-bottom: 10px;
+  text-align: center;
 }

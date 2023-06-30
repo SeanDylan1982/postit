@@ -1,8 +1,9 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 import Nav from '../Components/Auth/Nav'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ["400", "700"], variable: "--font-inter" })
+const roboto = Roboto({ subsets: ['latin'], weight: ["400", "700"], variable: "--font-roboto" })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,14 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={roboto.className}>
       <title>postIt!</title>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      />
-      <body className={inter.className}>
+      <body className={` ${roboto.variable} bg-gray-200 `}>
         <Nav />
         {children}
       </body>
